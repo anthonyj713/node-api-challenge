@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
         res.status(200).json(projects)
     })
     .catch(err => {
-        console.log(err)
+        console.log(err);
         res.status(500).json({
             message: 'Project data could not be retrieved'
         });
