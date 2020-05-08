@@ -17,6 +17,25 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', (req, res) => {
+    Actions.get(req.params.id)
+    .then(action => {
+        if (action) {
+            res.status(200).json(action);
+        } else {
+            res.status(404).json({
+                message: 'Action with that ID not found'
+            })
+        }
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json({
+            message: 'Error retrieving the action'
+        });
+    });
+});
+
 
 
 
