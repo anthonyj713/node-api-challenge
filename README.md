@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a framework that works with node.js. Express allows you to set up middlewares to respond to HTTP requests.
+
 - [ ] Describe Middleware?
+
+Middleware is a function that has access to the request and response objects and can call another middleware function if needed.
 
 - [ ] Describe a Resource?
 
+A resource is the data or objects that the CRUD operators are dealing with.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+An API can return a message stating that the request was successful along with whatever the request was.
+
 - [ ] How can we partition our application into sub-applications?
+
+You could partition your application with helpers, models, migrations, routers, seeds, etc
 
 ## Minimum Viable Product
 
